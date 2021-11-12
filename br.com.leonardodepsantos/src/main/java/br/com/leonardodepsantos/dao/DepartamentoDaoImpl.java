@@ -10,3 +10,5 @@ public class DepartamentoDaoImpl extends AbstractDao<Departamento, Long> impleme
 	
 
 }
+
+
