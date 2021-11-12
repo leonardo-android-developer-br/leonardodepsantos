@@ -8,7 +8,7 @@ import br.com.leonardodepsantos.domain.Cargo;
 
 public interface CargoDao {
 
-void save(Cargo cargo);
+	void save(Cargo cargo);
 	
 	void update(Cargo cargo);
 	
@@ -17,5 +17,6 @@ void save(Cargo cargo);
 	Cargo findById(Long id);
 	
 	List<Cargo> findAll();
+
 	
 }
