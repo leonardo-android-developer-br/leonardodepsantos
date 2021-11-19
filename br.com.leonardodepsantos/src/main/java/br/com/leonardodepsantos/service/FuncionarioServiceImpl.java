@@ -14,6 +14,7 @@ import br.com.leonardodepsantos.domain.Funcionario;
 public class FuncionarioServiceImpl implements FuncionarioService {
 
 	
+	
 	@Autowired
 	private FuncionarioDao dao;
 	
