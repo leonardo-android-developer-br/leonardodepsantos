@@ -60,6 +60,13 @@
 		$('#ok_confirm').click(function() {
 			document.location.href = url;
 		});
+		$('button[id*="btn_"]').click(function() {
+			url = "http://localhost:8080/" + $(this).attr('id').split("_")[1];
+		});
+		
+		$('#ok_confirm').click(function() {
+			document.location.href = url;
+		});
 	    
 		
 		$(function() {
@@ -75,4 +82,4 @@
 	</script>
 
 </body>
-</html> Veio veio !! Vai entender mano! Se cuida Betão, boa noite e obrigado.
+</html>

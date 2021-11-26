@@ -1,6 +1,5 @@
 package br.com.leonardodepsantos.service;
 
-
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,4 +46,13 @@ public class CargoServiceImp implements CargoService {
 		return dao.findAll();
 	}
 
+	@Override
+	public boolean cargoTemFuncionario(Long id) {
+		
+		
+	if(buscarPorId(id).getFuncionarios().isEmpty()) {
+		return false;
+	}
+		return true;
+	}
 }
